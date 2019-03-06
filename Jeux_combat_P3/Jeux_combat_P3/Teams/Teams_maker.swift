@@ -14,6 +14,7 @@ class TeamMaker {
     var heroesName = [String]()
     var teamName = ""
     
+    // METHODS
     // Create two teams
     func createTeams () {
         for n in 0..<2 {
@@ -61,7 +62,7 @@ class TeamMaker {
         return heroName
     }
    
-    // Menu display’
+    // Menu display
     private func menuListOfHero() {
         print("\n =========================================="
             + "\n Ajoutez 3 personnages à votre équipe :"
@@ -88,23 +89,23 @@ class TeamMaker {
         switch userChoice {
         case 1:
             let combattant = Combattant(name: uniqueName)
-            print("✅ Le combattant nommé \(combattant.name) est ajouté!")
+            print("✅ Le combattant nommé \(combattant.name) est ajouté !")
             return Combattant(name: uniqueName)
         case 2:
             let mage = Mage(name: uniqueName)
-            print("✅ Le mage nommé \(mage.name) est ajouté!")
+            print("✅ Le mage nommé \(mage.name) est ajouté !")
             return Mage(name: uniqueName)
         case 3:
             let colosse = Colosse(name: uniqueName)
-            print("✅ Le colosse nommé \(colosse.name) est ajouté!")
+            print("✅ Le colosse nommé \(colosse.name) est ajouté !")
             return Colosse(name: uniqueName)
         case 4:
             let nain = Nain(name: uniqueName)
-            print("✅ Le nain nommé \(nain.name) est ajouté!")
+            print("✅ Le nain nommé \(nain.name) est ajouté !")
             return Nain(name: uniqueName)
         case 5:
             let sorciere = Sorciere(name: uniqueName)
-            print("✅ La sorcière nommée \(sorciere.name) est ajoutée!")
+            print("✅ La sorcière nommée \(sorciere.name) est ajoutée !")
             return Sorciere(name: uniqueName)
         default:
             return nil

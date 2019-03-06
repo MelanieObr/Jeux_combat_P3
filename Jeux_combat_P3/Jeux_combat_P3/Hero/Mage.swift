@@ -13,19 +13,20 @@ class Mage: Hero {
         super.init(heroType: "Mage", lifePoint: 60, weapons: Scepter(), name: name)
     }
     
+    // METHODS
     // Method for Magus when he heals someone from his team. Hero's life points can't be more than his max life points
     func heal(heroToHeal: Hero) {
         heroToHeal.lifePoint += weapons.weaponsHeal
         if heroToHeal.lifePoint >= heroToHeal.maxLifePoint {
             heroToHeal.lifePoint = heroToHeal.maxLifePoint
         }
-        print("\(heroToHeal.heroType) \(heroToHeal.name) est soigné maintenant \(heroToHeal.lifePoint) points de vie")
+        print("\(heroToHeal.heroType) \(heroToHeal.name) est soigné de \(heroToHeal.lifePoint) points de vie")
         
     }
     
     // Describe Magus Hero
     override func describeHero() {
-        print(" " + heroType + " " + name + ": Vie: \(lifePoint) - " + weapons.weaponsName + " (Soin: \(weapons.weaponsHeal) pts)")
+        print(" " + heroType + " " + name + " : Vie : \(lifePoint) - " + weapons.weaponsName + " (Soin : \(weapons.weaponsHeal) pts)")
     }
     
 }

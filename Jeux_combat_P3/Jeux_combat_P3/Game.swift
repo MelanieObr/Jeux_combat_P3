@@ -159,7 +159,7 @@ class Game {
                 let heroToAttack = playerSelection() // Player chooses hero for attack on enemy team
                 myHero.attack(heroToAttack: heroToAttack)
                 turnNumber += 1
-                print("nombre de tours : \(turnNumber)")
+                print("Nombre de tours : \(turnNumber)")
             }
         } while endOfGame() // repeat while it's still a hero alive on a team
     }
@@ -201,8 +201,8 @@ class Game {
         print()
         print("==============================")
         print("\n Statitiques du jeu")
-        print("\n nombre de tours: \(turnNumber)")
-        print("\n durée du jeu: \(gameTime(dateStartGame: dateStartGame))")
+        print("\n - Nombre de tours : \(turnNumber)")
+        print("\n - Durée du jeu : \(gameTime(dateStartGame: dateStartGame))")
         print("==============================")
     }
 }

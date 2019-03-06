@@ -18,9 +18,10 @@ class Team {
         self.name = name
     }
     
+    // METHODS
     // Method to show heroes in team with their descriptions
     func showHeroesInTeam() {
-        print("\n EQUIPE \(name):")
+        print("\n EQUIPE \(name) :")
         for hero in heroes {
             hero.describeHero()
         }

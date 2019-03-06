@@ -24,10 +24,10 @@ class Hero {
         self.maxLifePoint = lifePoint
     }
     
-    // Methods
+    // METHODS
     // Describe Hero
     func describeHero() {
-        print(" " + heroType + " " + name + ": Vie : \(lifePoint) - " + weapons.weaponsName + " (Force: \(weapons.weaponsDamage) pts)")
+        print(" " + heroType + " " + name + " : Vie : \(lifePoint) - " + weapons.weaponsName + " (Force : \(weapons.weaponsDamage) pts)")
     }
     
     // Attack the enemy

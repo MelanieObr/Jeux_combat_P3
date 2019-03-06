@@ -21,13 +21,14 @@ class Weapons {
         self.weaponsHeal = weaponsHeal
         
     }
+// METHOD
 // Method to describe new weapon when the chest appears
 func describeNewWeapon(of hero: Hero) {
     switch hero {
     case is Mage:
-        print("vous avez une nouvelle arme: " + weaponsName + " (Soin: \(weaponsHeal) pts)")
+        print("vous avez une nouvelle arme : " + weaponsName + " (Soin : \(weaponsHeal) pts)")
     case is Colosse, is Combattant, is Nain, is Sorciere :
-        print("vous avez une nouvelle arme: " + weaponsName + " (Force: \(weaponsDamage) pts)")
+        print("vous avez une nouvelle arme : " + weaponsName + " (Force : \(weaponsDamage) pts)")
     default:
         break
     }
