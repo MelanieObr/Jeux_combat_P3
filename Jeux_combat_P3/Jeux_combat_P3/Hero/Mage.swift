@@ -20,7 +20,7 @@ class Mage: Hero {
         if heroToHeal.lifePoint >= heroToHeal.maxLifePoint {
             heroToHeal.lifePoint = heroToHeal.maxLifePoint
         }
-        print("\(heroToHeal.heroType) \(heroToHeal.name) est soigné de \(heroToHeal.lifePoint) points de vie")
+        print("\(heroToHeal.heroType) \(heroToHeal.name) est soigné et a maintenant \(heroToHeal.lifePoint) points de vie")
         
     }
     
